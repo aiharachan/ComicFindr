@@ -31,9 +31,10 @@ function makeDetailsHTML (data)
   */
 
   var html = '<h2>' + data.name  + '</h2>' 
-  + '<img src="' + data.image + '">' 
-  + '<p>' + data.about + '</p>'
-  + '<a class="contact button">Contact ' + data.name + '</a>'
+  + '<img src="' + data.image + '">'
+  + '<p>' + data.area + '<br>' + data.address + '<br>' + data.postcode + '</p>'
+  + '<a href="' + data.website + '" class="button" target="_blank">Open Website</a>'
+  + '<p>' + data.description + '</p>'
 
   return html;        
 }

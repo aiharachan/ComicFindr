@@ -12,7 +12,7 @@ var detailsBackButton = $('#details .back')
 // tell the go button to do hide home and show results when we click it
 homeGoButton.click( function(){
     
-    // capturee user chosen option
+    // capture user chosen option
     var chosenOption = homeDropdown.val()
     console.log("You picked " + chosenOption)
     
@@ -20,7 +20,7 @@ homeGoButton.click( function(){
     resultsSection.show()
     
     // filter+sort people by user selection
-    var resultsList = filterAndSortList(peopleList, chosenOption);
+    var resultsList = filterAndSortList(storesList, 'area', chosenOption);
     console.log(resultsList);
     
     // show the results in the #results section

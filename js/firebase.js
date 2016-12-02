@@ -6,9 +6,12 @@ console.log("firebase.js ready to roll!")
 
   var config = {
 
-    apiKey: "AIzaSyDqCowWm_tfPP6BlQZIWiRCWzSwsD1dnFM",
+    apiKey: "AIzaSyAZdFwdMOQAZz7W6HbjldCCWlGsIrMD8kI",
+    authDomain: "comic-book-shop-database.firebaseapp.com",
+    databaseURL: "https://comic-book-shop-database.firebaseio.com",
+    storageBucket: "comic-book-shop-database.appspot.com",
+    messagingSenderId: "819752946444"
 
-    databaseURL: "https://dynamic-web-template-e91d4.firebaseio.com"
 
   };
 
@@ -20,19 +23,19 @@ var database = firebase.database();
 
 
 // grab only the "people" from the database
-var peopleData = database.ref('people');
+var storesData = database.ref('stores');
 
 
 // create a list of people
-var peopleList = []; // empty for now
+var storesList = []; // empty for now
 
 
 // load all of the children of "people"
 // keep listening for new children
-peopleData.on('child_added', function(childData){
+storesData.on('child_added', function(childData){
     // run the instruction for each child
     console.table(childData.val() );
-    var person = childData.val(); // extract data about the person
-    peopleList.push( person ); // add the person to the peopleList
+    var shop = childData.val(); // extract data about the person
+    storesList.push( shop ); // add the person to the storesList
 })
 
