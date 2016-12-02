@@ -12,7 +12,11 @@ function makeListItemHTML (data, index)
   // li = List Item
   var li  = '<li id="' + index + '">'
   + '<img src="' + data.image + '">' 
-  + '<h2>' + data.name + '</h2>' 
+  + '<h2>' + data.name + '</h2>'  
+  + '<p>' + data.address + ', ' + data.postcode + '</p>'
+  + '' + data.website + ''
+ 
+  
   + '</li>'
 
   return li;        
