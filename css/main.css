@@ -12,48 +12,110 @@
 
 html {
     color: #222;
-    font-size: 1em;
+    font-size: 14px;
     line-height: 1.4;
-    font-family: 'Fira Sans', sans-serif;
-    background-image: url("http://wallpapercave.com/wp/jd1Ylbc.jpg");
+    font-family: 'Roboto', sans-serif;
+    background-color: #111;
     background-attachment: fixed;
     background-size: cover;
-    color: #000;
+    color: #444;
 }
+
+p {margin: 0 auto; margin-bottom: 30px; padding: 0;}
 
 /* hide results and details by default */
 #results, #details {
     display: none;
 }
 
+#details p {border: 2px solid #ccc; padding: 30px;}
+
 img {max-width: 100%; max-height: 100%;}
 
-section
-
-{
-    
+section {
     background: #fff;
-    margin: auto;
-    max-width: 60%;
-    padding: 0px;
-    margin-top: 20px;
-    border-radius: 10px;
+    margin: 0 auto;
+    max-width: 40%;
+    padding: 0 40px 40px 40px;
+    margin-bottom: 150px;
+    -webkit-border-radius: 0 0 20px 20px;
+    border-radius: 0 0 20px 20px;
 }
 
-ol {list-style: none; margin: 0; padding: 0;}
-.blackbg li {border-bottom: 1px solid #000; padding: 20px;    transition: background .25s ease-in-out;
-   -moz-transition: background .25s ease-in-out;
-   -webkit-transition: background .25s ease-in-out;}
-.blackbg li:hover {background: #111; color: #fff; }
+.top {
+    display: block;
+    height: 70px;
+    margin: 0 auto;
+    margin: 0 -40px 0 -40px;
+    padding: 0;
+    text-align: center;
+    background-color: #be1313;
+    display: flex;
+  align-items: center
+}
 
-.blackbg img {height: 70px; float: left;}
+.top img {margin: 0 auto; height: 80%;}
+
+.top .home {
+    background: #9d1010;
+    color: #fff;
+    border: 0;
+    font-size: 100%;
+    padding: 0 30px 0 30px;
+    margin: 0;
+    display: inline-block;
+    height: 100%;
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+
+.top .back {
+    background: #9d1010;
+    color: #fff;
+    border: 0;
+    font-size: 100%;
+    padding: 0 30px 0 30px;
+    margin: 0;
+    display: inline-block;
+    height: 100%;
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+
+.top .back {float: left;}
+.top .home {float: right;}
+
+ol {list-style: none; margin: 0 -40px 0 -40px; padding: 0;}
+
+.dataitem li {
+    border-top: 1px solid #ccc;
+    padding: 20px 40px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.dataitem li:hover {
+    color: #9d1010;
+    padding: 20px 60px;
+}
+
+.dataitem img {height: 100px; width: 100px; float: right; margin: 0; padding: 0;}
 
 img#logo {
-    margin: auto;
-    width: 50%;
+    margin: 0 auto;
+    padding: 50px;
+    width: 30%;
     display: block;
     
 }
+
+h1, h2, h3, h4 {font-weight: lighter; !important;}
+h1 {text-align: center;}
 
 .button {
     background: black; 
@@ -64,14 +126,35 @@ img#logo {
 }
 
 select, button {
-    margin-bottom: 10px;
-    width: 100%;
-    background: black;
-    color: white;
+    font-family: 'Roboto', sans-serif;
+    background: #fff;
+    color: #444;
+    border: 2px solid #ccc;
     font-size: 100%;
-    padding: 10px;
-    border: 0px;
+    padding: 20px;
+    margin-bottom: 10px;
+    display: inline-block;
 }
+
+button {
+    background: #be1313;
+    color: #fff;
+    border: 2px solid #9d1010;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #9d1010;
+}
+
+select {width: 69%;}
+button {width: 30%;}
+
+
 
 /*
  * Remove text-shadow in selection highlight:

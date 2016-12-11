@@ -8,6 +8,7 @@ var resultsOL = $('#results ol');
 var detailsInfo = $('#details #info')
 var detailsSection = $('#details')
 var detailsBackButton = $('#details .back')
+var homeButton = $('#results .home')
 
 // tell the go button to do hide home and show results when we click it
 homeGoButton.click( function(){
@@ -49,6 +50,12 @@ homeGoButton.click( function(){
 
 // tell the back button to go back to home when we click it
 resultsBackButton.click( function(){
+    resultsSection.hide()
+    homeSection.show()
+})
+
+// tell the button to go to home when we click it
+homeButton.click( function(){
     resultsSection.hide()
     homeSection.show()
 })

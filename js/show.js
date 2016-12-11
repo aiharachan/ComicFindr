@@ -14,9 +14,7 @@ function makeListItemHTML (data, index)
   + '<img src="' + data.image + '">' 
   + '<h2>' + data.name + '</h2>'  
   + '<p>' + data.address + ', ' + data.postcode + '</p>'
-  + '' + data.website + ''
- 
-  
+
   + '</li>'
 
   return li;        
@@ -34,9 +32,9 @@ function makeDetailsHTML (data)
     <a class="contact button">Contact Matteo</a>
   */
 
-  var html = '<h2>' + data.name  + '</h2>' 
+  var html = '<h1>' + data.name  + '</h1>' 
   + '<img src="' + data.image + '">'
-  + '<p>' + data.area + '<br>' + data.address + '<br>' + data.postcode + '</p>'
+  + '<h2>Address</h2><p><b>Area: </b>' + data.area + '<br><b>Street: </b>' + data.address + '<br><b>Post Code: </b>' + data.postcode + '</p>'
   + '<a href="' + data.website + '" class="button" target="_blank">Open Website</a>'
   + '<p>' + data.description + '</p>'
 
